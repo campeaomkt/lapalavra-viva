@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La palabra viva - Revelación Versículo por Versículo</title>
+
     <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
@@ -17,12 +18,12 @@
     fbq('init', '944352891355382');
     fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=944352891355382&ev=PageView&noscript=1"
-    /></noscript>
     <!-- End Meta Pixel Code -->
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <style>
         html {
             scroll-behavior: smooth;
@@ -34,7 +35,6 @@
         h1, h2, h3, .serif {
             font-family: 'Playfair Display', serif;
         }
-        /* Prevents fixed navbar from covering the section title */
         [id] {
             scroll-margin-top: 100px;
         }
@@ -57,20 +57,31 @@
             box-shadow: 0 10px 30px -5px rgba(0,0,0,0.5);
         }
     </style>
-<script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.575.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
+
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.4",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "lucide-react": "https://esm.sh/lucide-react@^0.575.0"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="/index.css">
 </head>
+
 <body class="bg-bible-dark text-gray-200">
+
+    <!-- Facebook Pixel (fallback for no-JS) -->
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=944352891355382&ev=PageView&noscript=1"/>
+    </noscript>
+
     <div id="root"></div>
-<script type="module" src="/index.tsx"></script>
+
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
